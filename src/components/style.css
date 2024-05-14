@@ -1,0 +1,30 @@
+.image {
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(83, 82, 82);
+}
+.main {
+  position: relative;
+}
+.btn {
+  font-size: 32px;
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.btn--left {
+  left: 24.5%;
+}
+.btn--right {
+  right: 26.5%;
+}
+.dot {
+  fill: rgb(57, 56, 56);
+  font-size: 28px;
+  stroke-width: 1px;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
