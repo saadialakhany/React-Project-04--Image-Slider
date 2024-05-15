@@ -1,10 +1,16 @@
-.image {
+.current--image {
   width: 50%;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgb(83, 82, 82);
 }
+.hide--current--image {
+  display: none;
+}
 .main {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
   font-size: 32px;
@@ -12,19 +18,29 @@
   position: absolute;
   top: 50%;
   transform: translate(50%, -50%);
+  cursor: pointer;
 }
 .btn--left {
   left: 24.5%;
 }
 .btn--right {
-  right: 26.5%;
+  right: 27%;
 }
-.dot {
-  fill: rgb(57, 56, 56);
-  font-size: 28px;
-  stroke-width: 1px;
+.circle-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   position: absolute;
-  bottom: -7%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -15%;
+}
+.current--indicators {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #4a4a4a;
+  background-color: #666;
+  cursor: pointer;
+}
+.unselected {
+  background-color: #fff;
 }
